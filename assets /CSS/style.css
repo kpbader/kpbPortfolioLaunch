@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #024e76;
+    --secondary-color: #000; 
+    --tertiary-color: silver; 
+}
+
+body {
+    color: var(--primary-color);
+    font-family: Georgia, Times, serif;
+}
+/* HEADER/NAV Styles start */
+
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 44px;
+    color: var(--secondary-color);
+}
+header nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+
+
+/* HEADER/NAV Styles end */
+
+
+
+
+
+/* UTILITES start */
+
+.flex-row {
+    display: flex;
+}
+
+/* UTILITIES end */
+
+
+
+
+
+/* MEDIA QUERY FOR SCREEN SIZE CHANGES start */
+
+
+
+/* MEDIA QUERY FOR SCREEN SIZE CHANGES end */
