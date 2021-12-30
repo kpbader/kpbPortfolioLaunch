@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0px;
-    padding: 10px;
+    padding: 5px;
   }
 
 :root {
@@ -27,15 +27,13 @@ header {
 
 header h1 {
     margin-bottom: 30px;
-    font-size: 44px;
-    color: var(--secondary-color);
     text-align: center;
 }
 
 header a {
     display: flex;
     flex-wrap: wrap;
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 60px;
     text-decoration: none;
     color: var(--secondary-color);
@@ -56,6 +54,13 @@ footer {
 
 
 /* NAV styles start */
+
+nav {
+    position: sticky;
+    top: 0; 
+    background-color: var(--primary-color);
+}
+
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +70,7 @@ nav ul {
 }
 
 nav ul li a {
-    margin: 20px;
+    margin: 5px;
     padding: 5px;
     font-size: 36px;
     vertical-align: bottom;
@@ -89,15 +94,13 @@ nav ul li a:hover {
 /* SECTION TITLE styles start */
 
 .section-title {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 36px;
     font-weight: lighter;
-    color: var(--secondary-color);
-    padding-bottom: 20px;
+    color: var(--tertiary-color);
     text-align: center;
-}
-
-.primary-border {
-    border-color: var(--tertiary-color);
+    justify-content: center;
 }
 
 /* SECTION TITLE styles end */
@@ -135,11 +138,33 @@ nav ul li a:hover {
 
 /* RESUME styles start */ 
 
+.kpb-resume {
+    display: flex;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 10px;
+}
+
 /* RESUME styles end */ 
 
 
 /* CONTACT styles start */
 
+.contact-info {
+    text-align: center;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 30px;
+    color: var(--tertiary-color);
+}
+
+.contact-info address {
+    font-style: normal;
+    font-weight: lighter;
+}
+
+.contact-info address a {
+    color: var(--tertiary-color);
+}
 /* CONTACT styles end */
 
 
@@ -147,10 +172,6 @@ nav ul li a:hover {
 
 
 /* UTILITES start */
-
-.flex-row {
-    display: flex;
-}
 
 /* UTILITIES end */
 
