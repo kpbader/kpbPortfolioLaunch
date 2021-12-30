@@ -1,32 +1,124 @@
+
+
 :root {
-    --primary-color: #024e76;
+    --primary-color: white ;
     --secondary-color: #000; 
     --tertiary-color: silver; 
 }
 
 body {
-    color: var(--primary-color);
-    font-family: Georgia, Times, serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: Copperplate, Papyrus, fantasy;
 }
-/* HEADER/NAV Styles start */
 
+/* HEADER styles start */
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+}
 
 header h1 {
-    font-weight: bold;
-    margin: 0;
+    margin-bottom: 30px;
     font-size: 44px;
     color: var(--secondary-color);
+    text-align: center;
 }
-header nav ul li a {
+
+header a {
+    font-weight: normal;
+    font-size: 60px;
     text-decoration: none;
     color: var(--secondary-color);
+    border: 2px solid var(--tertiary-color);
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+
+}
+/* HEADER styles end */
+
+
+/* FOOTER styles start */
+footer {
+    text-align: center;
+    color: var(--tertiary-color);
+}
+/* FOOTER styles end */
+
+
+/* NAV styles start */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a {
+    margin: 20px;
+    padding: 5px;
+    font-size: 36px;
+    vertical-align: bottom;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+nav ul li a:hover {
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+}
+
+/* NAV styles end */
+
+
+
+
+
+/* SECTION TITLE styles start */
+
+.section-title {
+    font-size: 36px;
+    font-weight: lighter;
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.primary-border {
+    border-color: var(--tertiary-color);
+}
+
+/* SECTION TITLE styles end */
+
+/* ABOUT styles start */
+
+.about-kpb {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-kpb img {
+    width: 400px;
+    height: 500px;
+    margin: 30px;
+}
+
+.about-kpb div p {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px; 
+    font-size: 24px;
+    text-align: left;
 }
 
 
-
-/* HEADER/NAV Styles end */
-
-
+/* ABOUT styles end */
 
 
 
