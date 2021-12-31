@@ -8,6 +8,7 @@
     --primary-color: white ;
     --secondary-color: #000; 
     --tertiary-color: silver; 
+    --fourth-color: grey;
 }
 
 body {
@@ -22,7 +23,7 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    position: sticky;
+
 }
 
 header h1 {
@@ -74,7 +75,7 @@ nav ul li a {
     padding: 5px;
     font-size: 36px;
     vertical-align: bottom;
-    color: var(--secondary-color);
+    color: var(--fourth-color);
     text-decoration: none;
     font-weight: lighter;
 }
@@ -98,7 +99,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     font-size: 36px;
     font-weight: lighter;
-    color: var(--tertiary-color);
+    color: var(--fourth-color);
     text-align: center;
     justify-content: center;
 }
@@ -139,10 +140,23 @@ nav ul li a:hover {
 /* RESUME styles start */ 
 
 .kpb-resume {
-    display: flex;
-    border: 2px solid var(--tertiary-color);
-    border-radius: 10px;
+    text-align: center;
+    font-style: normal;
+    font-weight: lighter;
 }
+
+.kpb-resume a {
+    color: var(--tertiary-color);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: lighter;
+}
+
+.kpb-resume a:hover {
+    color: var(--fourth-color);
+}
+
+
 
 /* RESUME styles end */ 
 
@@ -164,6 +178,10 @@ nav ul li a:hover {
 
 .contact-info address a {
     color: var(--tertiary-color);
+}
+
+.contact-info address a:hover {
+    color: var(--fourth-color);
 }
 /* CONTACT styles end */
 
