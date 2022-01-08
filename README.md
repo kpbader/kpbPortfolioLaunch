@@ -1,4 +1,4 @@
-# Kyle Patrick Bader Web Solutions 
+# Kyle Patrick Bader Web Development 
 
 ## Purpose 
 To display KP Bader's web development projects and skills 
