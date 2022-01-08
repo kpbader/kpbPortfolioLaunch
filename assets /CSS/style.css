@@ -6,13 +6,12 @@
 
 :root {
     --primary-color: white ;
-    --secondary-color: #000; 
+    --secondary-color:grey; 
     --tertiary-color: silver; 
-    --fourth-color: grey;
+    --fourth-color: black;
 }
 
 body {
-    background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family: Copperplate, Papyrus, fantasy;
 }
@@ -27,14 +26,15 @@ header {
 }
 
 header h1 {
+    margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
+    font-weight: lighter;
 }
 
 header a {
     display: flex;
     flex-wrap: wrap;
-    font-weight: lighter;
     font-size: 60px;
     text-decoration: none;
     color: var(--secondary-color);
@@ -48,8 +48,16 @@ header a {
 
 /* FOOTER styles start */
 footer {
+    margin: 50px;
+    border-top: 2px solid var(--tertiary-color);
     text-align: center;
     color: var(--tertiary-color);
+}
+
+footer h2 {
+    padding-top: 40px;
+    font-size: 30px;
+    font-weight: lighter;
 }
 /* FOOTER styles end */
 
@@ -75,7 +83,7 @@ nav ul li a {
     padding: 5px;
     font-size: 36px;
     vertical-align: bottom;
-    color: var(--fourth-color);
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: lighter;
 }
@@ -88,10 +96,6 @@ nav ul li a:hover {
 
 /* NAV styles end */
 
-
-
-
-
 /* SECTION TITLE styles start */
 
 .section-title {
@@ -99,14 +103,36 @@ nav ul li a:hover {
     flex-wrap: wrap;
     font-size: 36px;
     font-weight: lighter;
-    color: var(--fourth-color);
+    color: var(--secondary-color);
     text-align: center;
     justify-content: center;
 }
 
 /* SECTION TITLE styles end */
 
+/* HERO BANNER start */
+#hero-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 50px 0px 50px;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-blend-mode: lighten;
+}
+
+/* HERO BANNER end */
+
+
 /* ABOUT styles start */
+ 
+#About {
+    margin: 50px;
+}
 
 .about-kpb {
     display: flex;
@@ -122,22 +148,43 @@ nav ul li a:hover {
 }
 
 .about-kpb div p {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 30px; 
-    font-size: 24px;
-    text-align: left;
+    margin: 10px;
+    padding: 40px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.about-kpb div p a {
+    color: var(--secondary-color);
+}
+
+.about-kpb div p a:hover {
+    color: var(--fourth-color);
 }
 
 /* ABOUT styles end */
 
 /* PORTFOLIO styles start */
-    
+
+#Portfolio {
+    margin: 50px;
+}
+
+.kpb-portfolio {
+    display: flex;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 10px;
+}
 
 /* PORTFOLIO styles end */
 
 
 /* RESUME styles start */ 
+
+#Resume {
+    margin: 50px;
+    padding-top: 40px;
+}
 
 .kpb-resume {
     text-align: center;
@@ -162,6 +209,12 @@ nav ul li a:hover {
 
 
 /* CONTACT styles start */
+
+#Contact {
+    margin: 50px;
+    padding-top: 40px;
+    border-top: 2px solid var(--tertiary-color);
+}
 
 .contact-info {
     text-align: center;
