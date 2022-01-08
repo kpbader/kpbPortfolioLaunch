@@ -68,6 +68,7 @@ nav {
     position: sticky;
     top: 0; 
     background-color: var(--primary-color);
+    z-index: 999;
 }
 
 nav ul {
@@ -106,6 +107,7 @@ nav ul li a:hover {
     color: var(--secondary-color);
     text-align: center;
     justify-content: center;
+    padding: 30px;
 }
 
 /* SECTION TITLE styles end */
@@ -121,8 +123,6 @@ nav ul li a:hover {
 .banner img {
     height: 100%;
     width: 100%;
-    border-radius: 20px;
-    background-blend-mode: lighten;
 }
 
 /* HERO BANNER end */
@@ -135,19 +135,22 @@ nav ul li a:hover {
 }
 
 .about-kpb {
-    display: flex;
+    display: inline-flex;
+    justify-content: center;
+    padding: 30px;
     border: 2px solid var(--tertiary-color);
     border-radius: 10px;
 }
 
 .about-kpb img {
-    display: flex;
-    width: 450px;
-    height: 300px;
+    height: 400px;
+    width: 315px;
     margin: 30px;
+    border-radius: 15px;
 }
 
-.about-kpb div p {
+.about-kpb p {
+    position: relative;
     margin: 10px;
     padding: 40px;
     font-size: 30px;
@@ -172,8 +175,27 @@ nav ul li a:hover {
 
 .kpb-portfolio {
     display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
     border: 2px solid var(--tertiary-color);
     border-radius: 10px;
+}
+
+.kpb-portfolio a {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: var(--tertiary-color);
+}
+
+.kpb-portfolio a:hover {
+    color: var(--fourth-color);
+}
+.kpb-portfolio img {
+    border-radius: 15px;
 }
 
 /* PORTFOLIO styles end */
@@ -183,7 +205,6 @@ nav ul li a:hover {
 
 #Resume {
     margin: 50px;
-    padding-top: 40px;
 }
 
 .kpb-resume {
@@ -212,7 +233,7 @@ nav ul li a:hover {
 
 #Contact {
     margin: 50px;
-    padding-top: 40px;
+    padding-top: 20px;
     border-top: 2px solid var(--tertiary-color);
 }
 
@@ -251,7 +272,10 @@ nav ul li a:hover {
 
 
 /* MEDIA QUERY FOR SCREEN SIZE CHANGES start */
-
+@media screen and (max-width:  360px) {
+    .about-kpb { flex-direction: column }
+    body { flex-direction: column;}
+}
 
 
 /* MEDIA QUERY FOR SCREEN SIZE CHANGES end */
