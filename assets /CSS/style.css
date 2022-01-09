@@ -173,15 +173,26 @@ nav ul li a:hover {
     margin: 50px;
 }
 
-.kpb-portfolio {
+.portfolio-samples {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     padding: 30px;
+    margin-bottom: 15px;
     border: 2px solid var(--tertiary-color);
     border-radius: 10px;
 }
 
-.kpb-portfolio a {
+/* .kpb-portfolio-1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-bottom: 15px;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 10px;
+} */
+
+.kpb-portfolio-1 a {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
@@ -191,12 +202,75 @@ nav ul li a:hover {
     color: var(--tertiary-color);
 }
 
-.kpb-portfolio a:hover {
+.kpb-portfolio-1 a:hover {
     color: var(--fourth-color);
 }
-.kpb-portfolio img {
+.kpb-portfolio-1 img {
+    border-radius: 15px;
+} 
+
+.kpb-portfolio-2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 510px;
+    width: 700px;
+    padding: 15px;
+}
+
+.kpb-portfolio-2 a {
+    display: flex; 
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: var(--tertiary-color);
+}
+
+.kpb-portfolio-2 a:hover {
+    color: var(--fourth-color);
+}
+
+.kpb-portfolio-2 img {
     border-radius: 15px;
 }
+
+.kpb-portfolio-3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    padding: 15px;
+
+}
+
+.kpb-portfolio-3 a {
+    display: flex; 
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: var(--tertiary-color);
+}
+
+.kpb-portfolio-3 a:hover {
+    color: var(--fourth-color);
+}
+
+.kpb-portfolio-3 img {
+    display: flex; 
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+} */
+
+
+
+
+
 
 /* PORTFOLIO styles end */
 
@@ -205,6 +279,7 @@ nav ul li a:hover {
 
 #Resume {
     margin: 50px;
+    border-top: 2px solid var(--tertiary-color);
 }
 
 .kpb-resume {
@@ -272,10 +347,10 @@ nav ul li a:hover {
 
 
 /* MEDIA QUERY FOR SCREEN SIZE CHANGES start */
-@media screen and (max-width:  360px) {
+@media screen and (max-width:  900px) {
     .about-kpb { flex-direction: column }
-    body { flex-direction: column;}
-}
+    body { flex-direction: column }
+};
 
 
 /* MEDIA QUERY FOR SCREEN SIZE CHANGES end */
