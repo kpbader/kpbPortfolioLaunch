@@ -1,15 +1,15 @@
-# Kyle Patrick Bader Web Development 
 
-## Purpose 
-To display KP Bader's web development projects and skills 
+*Kyle Patrick Bader Web Development
 
-## Built With
+**Purpose
+***To display KP Bader's web development projects and skills
+
+**Built With
 * HTML
 * CSS
 
-## Website 
+**Website
 https://kpbader.github.io/kpbPortfolioLaunch/
 
-## Contribution 
-Made by Kyle Patrick Bader 
-
+**Contribution
+Made by Kyle Patrick Bader
