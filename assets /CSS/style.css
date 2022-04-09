@@ -267,9 +267,29 @@ nav ul li a:hover {
     border-radius: 15px;
 } 
 
+.kpb-portfolio-4 a {
+    display: flex; 
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: var(--tertiary-color);
+}
 
+.kpb-portfolio-4 a:hover {
+    color: var(--fourth-color);
+}
 
-
+/* .kpb-portfolio-4 img {
+    display: flex; 
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+} */
 
 
 /* PORTFOLIO styles end */
